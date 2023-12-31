@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD647B712B41CD400071647A /* TimerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD647B702B41CD400071647A /* TimerArc.swift */; };
 		BDF922B22B4055CF007ACC26 /* ArgumentatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF922B12B4055CF007ACC26 /* ArgumentatorApp.swift */; };
 		BDF922B42B4055CF007ACC26 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF922B32B4055CF007ACC26 /* TimerView.swift */; };
 		BDF922B62B4055D2007ACC26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF922B52B4055D2007ACC26 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD647B702B41CD400071647A /* TimerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerArc.swift; sourceTree = "<group>"; };
 		BDF922AE2B4055CF007ACC26 /* Argumentator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Argumentator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF922B12B4055CF007ACC26 /* ArgumentatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentatorApp.swift; sourceTree = "<group>"; };
 		BDF922B32B4055CF007ACC26 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF922CA2B409D77007ACC26 /* TimerPresenter.swift */,
+				BD647B702B41CD400071647A /* TimerArc.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				BDF922CB2B409D77007ACC26 /* TimerPresenter.swift in Sources */,
 				BDF922C92B409C07007ACC26 /* TimerModel.swift in Sources */,
+				BD647B712B41CD400071647A /* TimerArc.swift in Sources */,
 				BDF922B42B4055CF007ACC26 /* TimerView.swift in Sources */,
 				BDF922B22B4055CF007ACC26 /* ArgumentatorApp.swift in Sources */,
 			);

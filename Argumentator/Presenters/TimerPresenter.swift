@@ -30,3 +30,9 @@ class TimerPresenter: ObservableObject {
     }
 }
 
+func formatTimeInterval(interval: TimeInterval) -> String {
+    let formatter = DateComponentsFormatter()
+    formatter.unitsStyle = .positional
+    formatter.allowedUnits = [.hour, .minute, .second]
+    return formatter.string(from: interval) ?? "00:00:00"
+}

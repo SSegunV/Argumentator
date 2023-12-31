@@ -10,25 +10,20 @@ import SwiftUI
 struct TimerView: View {
     @ObservedObject var presenter: TimerPresenter
 
-        var body: some View {
+    var body: some View {
             VStack {
-                Text(formatTimeInterval(interval: presenter.elapsedTime))
-                    .font(.system(size: 24))
-                    .padding()
+                    TimerArc(elapsedTime: presenter.elapsedTime)
+                        .stroke(style: StrokeStyle(lineWidth: 24, lineCap: .round, lineJoin: .round))
+                        .foregroundColor(Color.blue)
+                        .rotationEffect(Angle(degrees: -90))
+                }
+                .padding()
 
                 Button("Start", action: presenter.startButtonPressed)
                     .foregroundColor(.blue)
                     .padding()
             }
         }
-
-        private func formatTimeInterval(interval: TimeInterval) -> String {
-            let formatter = DateComponentsFormatter()
-            formatter.unitsStyle = .positional
-            formatter.allowedUnits = [.hour, .minute, .second]
-            return formatter.string(from: interval) ?? "00:00:00"
-        }
-    }
 
 
 #Preview {
