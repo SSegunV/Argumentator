@@ -13,7 +13,6 @@
 		BDF922B92B4055D2007ACC26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF922B82B4055D2007ACC26 /* Preview Assets.xcassets */; };
 		BDF922C92B409C07007ACC26 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF922C82B409C07007ACC26 /* TimerModel.swift */; };
 		BDF922CB2B409D77007ACC26 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF922CA2B409D77007ACC26 /* TimerPresenter.swift */; };
-		BDF922CD2B40B38B007ACC26 /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF922CC2B40B38B007ACC26 /* TimerCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		BDF922B82B4055D2007ACC26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDF922C82B409C07007ACC26 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		BDF922CA2B409D77007ACC26 /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
-		BDF922CC2B40B38B007ACC26 /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				BDF922B32B4055CF007ACC26 /* TimerView.swift */,
-				BDF922CC2B40B38B007ACC26 /* TimerCircleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 			files = (
 				BDF922CB2B409D77007ACC26 /* TimerPresenter.swift in Sources */,
 				BDF922C92B409C07007ACC26 /* TimerModel.swift in Sources */,
-				BDF922CD2B40B38B007ACC26 /* TimerCircleView.swift in Sources */,
 				BDF922B42B4055CF007ACC26 /* TimerView.swift in Sources */,
 				BDF922B22B4055CF007ACC26 /* ArgumentatorApp.swift in Sources */,
 			);

@@ -19,8 +19,6 @@ struct TimerView: View {
                 Button("Start", action: presenter.startButtonPressed)
                     .foregroundColor(.blue)
                     .padding()
-                
-                
             }
         }
 
