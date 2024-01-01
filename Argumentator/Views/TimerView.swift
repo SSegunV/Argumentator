@@ -11,20 +11,22 @@ struct TimerView: View {
     @ObservedObject var presenter: TimerPresenter
 
     var body: some View {
-            VStack {
-                    TimerArc(elapsedTime: presenter.elapsedTime)
-                        .stroke(style: StrokeStyle(lineWidth: 24, lineCap: .round, lineJoin: .round))
-                        .foregroundColor(Color.blue)
-                        .rotationEffect(Angle(degrees: -90))
-                }
+        VStack {
+            TimerArc(elapsedTime: presenter.elapsedTime)
+                .stroke(style: StrokeStyle(lineWidth: 24, lineCap: .round, lineJoin: .round))
+                .foregroundColor(Color.blue)
+                .rotationEffect(Angle(degrees: -90))
+                .overlay(
+                    Text(formatTimeInterval(interval: presenter.elapsedTime))
+                )
                 .padding()
 
-                Button("Start", action: presenter.startButtonPressed)
-                    .foregroundColor(.blue)
-                    .padding()
-            }
+            Button("Start", action: presenter.startButtonPressed)
+                .foregroundColor(.blue)
+                .padding()
         }
-
+    }
+}
 
 #Preview {
     TimerView(presenter: TimerPresenter())
